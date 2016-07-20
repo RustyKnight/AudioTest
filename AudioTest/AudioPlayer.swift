@@ -17,7 +17,7 @@ public class AudioPlayer {
 	
 	var audioPlayer: AVAudioPlayer?
 	
-	func play(audio source: URL) throws {
+	public func play(audio source: URL) throws {
 		try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
 		try AVAudioSession.sharedInstance().setActive(true)
 		
@@ -29,7 +29,7 @@ public class AudioPlayer {
 		audioPlayer.play()
 	}
 	
-	func stop() {
+	public func stop() {
 		guard let audioPlayer = audioPlayer else {
 			return
 		}
