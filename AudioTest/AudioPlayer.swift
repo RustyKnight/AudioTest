@@ -10,6 +10,11 @@ import Foundation
 import AVFoundation
 
 public class AudioPlayer {
+	
+	public init() {
+		
+	}
+	
 	var audioPlayer: AVAudioPlayer?
 	
 	func play(audio source: URL) throws {
